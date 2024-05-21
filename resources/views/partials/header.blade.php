@@ -11,10 +11,10 @@
           <a class="nav-link {{Route::currentRouteName() === 'home' ? 'active' : '' }}" aria-current="page" href="/">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('movies')}}">Movies</a>
+          <a class="nav-link" href="{{route('movies.index')}}">Movies</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="{{route('books')}}">Books</a>
+          <a class="nav-link" href="{{route('books.index')}}">Books</a>
         </li>
       </ul>
     </div>

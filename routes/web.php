@@ -20,8 +20,10 @@ use App\Http\Controllers\BookController;
 Route::get('/', function () {
     return view('home');
 });
-Route::get('/movies', [MovieController::class, 'index'])->name('movies');
-Route::get('/books', [BookController::class, 'index'])->name('books');
+Route::get('/movies', [MovieController::class, 'index'])->name('movies.index');
+Route::get('/movies/{id}', [MovieController::class, 'show'])->name('movies.show');
+Route::get('/books', [BookController::class, 'index'])->name('books.index');
+Route::get('/books/{id}', [BookController::class, 'show'])->name('books.show');
 
 
 

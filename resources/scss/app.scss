@@ -13,6 +13,14 @@ $fa-font-path: "../webfonts" !default;
 // Add your own custom styles here
 main{
  background-color: rgba(0, 0, 0, 0.538);
+ padding-top: 56px;
+
+}
+
+header{
+    position: fixed;
+    z-index: 2000;
+    width: 100%;
 }
 
 footer{

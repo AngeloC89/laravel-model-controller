@@ -15,4 +15,8 @@ class BookController extends Controller
         //dd($movies);
         return view('books.index', compact('books'));
     }
+    public function show($id) {
+        $book = Book::find($id);
+        return view('books.show', compact('book'));
+    }
 }

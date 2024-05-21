@@ -10,7 +10,7 @@
 <div class="card p-0 m-2" style="width: 18rem;">
   <img src="{{$movie->image }}" class="card-img-top" alt="{{ $movie->title }}">
   <div class="card-body">
-    <h4 class="card-text">{{ $movie->title  }}</h4>
+    <h4 class="card-text"><a class="text-decoration-none text-black" href="{{ route('movies.show', $movie->id) }}">{{ $movie->title }}</a></h4>
     <p>{{ $movie->vote }}</p>
   </div>
 

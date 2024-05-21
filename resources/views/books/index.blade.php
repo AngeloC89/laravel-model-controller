@@ -10,7 +10,7 @@
 <div class="card p-0 m-2" style="width: 18rem;">
   <img src="{{$book->cover_image }}" class="card-img-top" alt="{{ $book->title }}">
   <div class="card-body">
-    <h4 class="card-text">{{ $book->title  }}</h4>
+    <h4 class="card-text"><a class="text-decoration-none text-black" href="{{ route('books.show', $book->id) }} ">{{ $book->title  }}</a></h4>
     <p>{{ $book->vote }}</p>
   </div>
 
