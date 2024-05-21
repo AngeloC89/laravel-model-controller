@@ -1,4 +1,4 @@
-@use "./partials/_variables.scss" as *;
+@use "./partials/variables.scss" as *;
 
 $fa-font-path: "../webfonts" !default;
 
@@ -11,3 +11,10 @@ $fa-font-path: "../webfonts" !default;
 
 
 // Add your own custom styles here
+
+footer{
+    height: 80px;
+    background-color: rgba(9, 4, 39, 0.916);
+    color: white;
+    text-align: center;
+}
