@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MovieController;
+use App\Http\Controllers\BookController;
 
 
 
@@ -20,6 +21,7 @@ Route::get('/', function () {
     return view('home');
 });
 Route::get('/movies', [MovieController::class, 'index'])->name('movies');
+Route::get('/books', [BookController::class, 'index'])->name('books');
 
 
 

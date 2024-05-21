@@ -11,10 +11,17 @@ $fa-font-path: "../webfonts" !default;
 
 
 // Add your own custom styles here
+main{
+ background-color: rgba(0, 0, 0, 0.538);
+}
 
 footer{
     height: 80px;
     background-color: rgba(9, 4, 39, 0.916);
     color: white;
     text-align: center;
+}
+
+#main_home{
+    height: calc(100vh - 136px);
 }

@@ -15,4 +15,6 @@ class MovieController extends Controller
         //dd($movies);
         return view('movies.index', compact('movies'));
     }
+
+    
 }
